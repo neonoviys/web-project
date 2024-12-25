@@ -1,0 +1,52 @@
+/* styles.css */
+
+/* Глобальные стили */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f0e6;
+}
+
+/* Настройка Hero секции */
+.hero {
+    background-image: url('images/background.jpg'); /* Относительный путь */
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px); /* Высота учитывает высоту Navbar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text {
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Эффект при наведении на карточки в меню */
+.menu-section .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Секция команды */
+.team-list .card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px auto 0;
+}
+
+/* Utility */
+* {
+    box-sizing: border-box;
+}
