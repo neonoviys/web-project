@@ -7,8 +7,14 @@ body {
     color: #333;
     background-color: #f7f0e6;
     min-height: 100vh;
+    min-height: -webkit-fill-available;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+}
+
+html {
+    height: -webkit-fill-available; 
 }
 
 /* Настройка Hero секции */
@@ -16,7 +22,9 @@ body {
     background-image: url('images/background.jpg'); /* Относительный путь */
     background-size: cover;
     background-position: center;
-    height: calc(100vh - 80px); /* Высота учитывает высоту Navbar */
+    height: 100vh; 
+    height: -webkit-fill-available;
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
